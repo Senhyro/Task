@@ -1,0 +1,12 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+console.log("Test");
+var environment_1 = require("./classes/environment");
+var subject_1 = require("./classes/subject");
+var task_1 = require("./classes/task");
+var environment = new environment_1.Environment("School", "kaka");
+var subject = new subject_1.Subject("test", "test");
+var task = new task_1.Task("test", "test");
+environment.addSubject(subject);
+subject.addTask(task);
+console.log(environment);
